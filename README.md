@@ -70,6 +70,10 @@ as versões `BEFORE` e `AFTER`. Para compilar todos os módulos:
 mvn package
 ```
 
+O teste de aceitação percorre o mesmo fluxo nas duas versões e compara o
+resultado observável. Já `DependenciasCamadasTest`, no módulo `after`, verifica
+que as camadas `domain` e `application` não importam adaptadores de `infra`.
+
 Para executar o exemplo depois de compilar:
 
 ```powershell
